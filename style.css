@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;   /* keep cover */
+  background-attachment: fixed;  /* prevents scroll zoom illusion */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+}
+
+.lock-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.lock-card {
+  max-width: 420px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 16px;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    120deg,
+    #00ff66,
+    #00f7ff,
+    #00b3ff,
+    #6a00ff,
+    #00ff66
+  );
+
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 1px #00ff66,
+    0 0 2px #00f7ff;
+}
+@keyframes auroraFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.dev-message {
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  opacity: 0.8;
+}
+
+.input-group input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #000;
+border: 1px solid #111;
+color: #fff;
+  color: #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 8px rgba(0, 247, 255, 0.5);
+}
+
+.verify-btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #00f7ff;
+  border-radius: 8px;
+  background: #000;
+  color: #00f7ff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.verify-btn:hover {
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.error-msg {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #ff4d4d;
+}
